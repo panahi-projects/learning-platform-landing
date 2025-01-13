@@ -30,9 +30,6 @@ const HeroSlider = () => {
           <Button size={"xl"} variant={"default"}>
             Apply Now
           </Button>
-          {/* <button className="bg-orange-500 text-white py-3 px-6 rounded-md hover:bg-orange-600">
-            Apply Now
-          </button> */}
         </div>
       </div>
     </div>
