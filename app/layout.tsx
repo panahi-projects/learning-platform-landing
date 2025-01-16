@@ -4,6 +4,7 @@ import AlertBar from "@/components/layout/AlertBar";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "./globals.scss";
+import "@/public/styles/shadcn.scss";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
