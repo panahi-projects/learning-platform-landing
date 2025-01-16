@@ -1,17 +1,27 @@
 import CourseItem from "@/components/CourseItem";
 import ProgramsCardCarousel from "@/components/ProgramsCardCarousel";
 import HeroSlider from "../components/HeroSlider";
+import ProgramsCardCarousel2 from "@/components/ProgramsCardCarousel2";
 
 export default function Home() {
   return (
     <div>
       <HeroSlider />
-      <section className="container py-8">
-        <ProgramsCardCarousel />
-      </section>
-      <section className="container py-8">
-        <CourseItem />
-      </section>
+      <div>
+        <section className="container py-8">
+          <ProgramsCardCarousel />
+        </section>
+      </div>
+      <div>
+        <section className="container py-8">
+          <CourseItem />
+        </section>
+      </div>
+      <div className="bg-background2">
+        <section className="container py-8">
+          <ProgramsCardCarousel2 />
+        </section>
+      </div>
     </div>
   );
 }

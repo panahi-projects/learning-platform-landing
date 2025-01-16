@@ -15,6 +15,12 @@ export interface CardProps {
   icon?: React.ReactElement;
   classes?: string;
   isActive?: boolean;
+  details?: {
+    age: string;
+    days: string;
+    hours: string;
+  };
+  imageSrc?: string;
 }
 
 const ProgramCard: React.FC<CardProps> = ({
