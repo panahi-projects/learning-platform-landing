@@ -5,7 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import React, { ReactNode, useEffect, useState } from "react";
 import { DotButton, useDotButton } from "./DotButton";
 
-interface CardsCarouselProps {
+export interface CardsCarouselProps {
   title?: string;
   description?: string;
   options?: EmblaOptionsType;
@@ -54,7 +54,11 @@ const CardsCarousel: React.FC<CardsCarouselProps> = ({
         <h3 className="lg:text-2xl text-xl font-bold pb-2 fredoka-700 text-indigo-900">
           {title}
         </h3>
-        <p className="text-gray-600 mt-2 mx-auto max-w-md text-md">
+        <p
+          className={`text-gray-600 mt-2 mx-auto text-md ${
+            description && description?.length > 200 ? "max-w-4xl" : "max-w-md"
+          }`}
+        >
           {description}
         </p>
       </section>

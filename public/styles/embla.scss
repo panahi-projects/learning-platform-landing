@@ -8,6 +8,7 @@
   --slide-size-sm: 50%;
   --slide-spacing-lg: 2rem;
   --slide-size-lg: calc(100% / 3);
+  --slide-size-lg-even: calc(100% / 4);
 }
 .embla__viewport {
   overflow: hidden;
@@ -43,6 +44,9 @@
   .embla__slide {
     flex: 0 0 var(--slide-size-lg);
     padding-left: var(--slide-spacing-lg);
+  }
+  .embla__slide__even {
+    flex: 0 0 var(--slide-size-lg-even);
   }
 }
 .embla__slide__number {

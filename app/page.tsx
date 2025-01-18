@@ -4,6 +4,8 @@ import HeroSlider from "../components/HeroSlider";
 import ProgramsCardCarousel2 from "@/components/ProgramsCardCarousel2";
 import AccordionSection from "@/components/AccordionSection";
 import CommunitySection from "@/components/CommunitySection";
+import TeachersCarousel from "@/components/TeachersCarousel";
+import EndorsementSection from "@/components/EndorsementSection";
 
 export default function Home() {
   return (
@@ -32,6 +34,16 @@ export default function Home() {
       <div>
         <section className="py-8">
           <CommunitySection />
+        </section>
+      </div>
+      <div>
+        <section className="container py-8">
+          <TeachersCarousel />
+        </section>
+      </div>
+      <div>
+        <section className="py-8">
+          <EndorsementSection />
         </section>
       </div>
     </div>
