@@ -7,6 +7,7 @@ import CommunitySection from "@/components/CommunitySection";
 import TeachersCarousel from "@/components/TeachersCarousel";
 import EndorsementSection from "@/components/EndorsementSection";
 import NewsSection from "@/components/NewsSection";
+import SubscriberBox from "@/components/SubscriberBox";
 
 export default function Home() {
   return (
@@ -50,6 +51,11 @@ export default function Home() {
       <div>
         <section className="container py-8">
           <NewsSection />
+        </section>
+      </div>
+      <div>
+        <section className="pt-12">
+          <SubscriberBox />
         </section>
       </div>
     </div>
