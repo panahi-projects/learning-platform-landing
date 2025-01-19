@@ -1,8 +1,13 @@
 import { BsFillSendFill } from "react-icons/bs";
 import { Button } from "./button";
 import { Input } from "./input";
+import { ReactNode } from "react";
 
-const InputButton = () => {
+interface InputButtonProps {
+  children?: ReactNode;
+}
+
+const InputButton: React.FC<InputButtonProps> = ({ children }) => {
   return (
     <div className="relative">
       <Input
@@ -15,10 +20,7 @@ const InputButton = () => {
         className="absolute top-1/2 -translate-y-1/2 right-2 md:px-12 px-4"
         variant={"default"}
       >
-        <BsFillSendFill className="text-3xl" />
-        <span className="md:text-md text-sm lg:inline-block hidden">
-          Subscribe Now
-        </span>
+        {children}
       </Button>
     </div>
   );

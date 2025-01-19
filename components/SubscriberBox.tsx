@@ -1,3 +1,4 @@
+import { BsFillSendFill } from "react-icons/bs";
 import InputButton from "./ui/inputButton";
 
 const SubscriberBox = () => {
@@ -24,7 +25,12 @@ const SubscriberBox = () => {
 
             {/* form */}
             <div className="mx-auto max-w-2xl">
-              <InputButton />
+              <InputButton>
+                <BsFillSendFill size={64} className="text-6xl" />
+                <span className="md:text-md text-sm lg:inline-block hidden">
+                  Subscribe Now
+                </span>
+              </InputButton>
             </div>
           </div>
         </div>
