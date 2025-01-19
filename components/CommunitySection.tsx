@@ -6,7 +6,7 @@ const CommunitySection = () => {
     <div>
       <div
         className="relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/image-7.jpg');" }}
+        style={{ backgroundImage: "url('/images/image-7.jpg')" }}
       >
         <div className="absolute inset-0 bg-sky-400 bg-opacity-75"></div>
 

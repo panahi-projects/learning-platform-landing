@@ -9,8 +9,9 @@ export interface CardsCarouselProps {
   title?: string;
   description?: string;
   options?: EmblaOptionsType;
-  children: ReactNode;
+  children?: ReactNode;
   onSlideChange?: (index: number) => void; // Custom event callback to notify parent
+  slides?: number;
 }
 
 const CardsCarousel: React.FC<CardsCarouselProps> = ({
@@ -18,6 +19,7 @@ const CardsCarousel: React.FC<CardsCarouselProps> = ({
   description,
   children,
   onSlideChange,
+  slides,
 }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, startIndex: 1 });
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
@@ -50,19 +52,30 @@ const CardsCarousel: React.FC<CardsCarouselProps> = ({
 
   return (
     <div>
-      <section className="text-center py-8 mb-8">
-        <h3 className="lg:text-2xl text-xl font-bold pb-2 fredoka-700 text-indigo-900">
-          {title}
-        </h3>
-        <p
-          className={`text-gray-600 mt-2 mx-auto text-md ${
-            description && description?.length > 200 ? "max-w-4xl" : "max-w-md"
-          }`}
-        >
-          {description}
-        </p>
-      </section>
-      <section className="embla lg:px-14 px-0">
+      {(title || description) && (
+        <section className="text-center py-8 mb-8">
+          <h3 className="lg:text-2xl text-xl font-bold pb-2 fredoka-700 text-indigo-900">
+            {title}
+          </h3>
+          <p
+            className={`text-gray-600 mt-2 mx-auto text-md ${
+              description && description?.length > 200
+                ? "max-w-4xl"
+                : "max-w-md"
+            }`}
+          >
+            {description}
+          </p>
+        </section>
+      )}
+      <section
+        className="embla lg:px-14 px-0"
+        style={
+          {
+            "--slide-size-lg": `calc(100% / ${slides || 3})`,
+          } as React.CSSProperties
+        }
+      >
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">{clonedChildren}</div>
         </div>

@@ -34,12 +34,10 @@ const TeachersCarousel = () => {
     <CardsCarousel
       title="Our Best Teachers"
       description="Lorem ipsum dolor sit amet consectetur. Senectus tellus eget nunc posuere quis at vitae consequat. At nulla erat nisi nunc. Sit risus sagittis pellentesque eget convallis commodo. Sit pellentesque dolor neque a diam malesuada."
+      slides={4}
     >
       {cards.map((card, index) => (
-        <div
-          className="embla__slide embla__slide__even"
-          key={`teacher-${card.id}`}
-        >
+        <div className="embla__slide" key={`teacher-${card.id}`}>
           <TeacherCard {...card} />
         </div>
       ))}
