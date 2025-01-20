@@ -1,10 +1,9 @@
 "use client";
-import { useState } from "react";
 import CardsCarousel from "./CardsCarousel";
-import TeacherCard from "./TeacherCard";
+import TeacherCard, { TeacherCardProps } from "./TeacherCard";
 
 const TeachersCarousel = () => {
-  const cards = [
+  const cards: TeacherCardProps[] = [
     {
       id: "1",
       imageSrc: "/images/image-8.png",
@@ -36,7 +35,7 @@ const TeachersCarousel = () => {
       description="Lorem ipsum dolor sit amet consectetur. Senectus tellus eget nunc posuere quis at vitae consequat. At nulla erat nisi nunc. Sit risus sagittis pellentesque eget convallis commodo. Sit pellentesque dolor neque a diam malesuada."
       slides={4}
     >
-      {cards.map((card, index) => (
+      {cards.map((card) => (
         <div className="embla__slide" key={`teacher-${card.id}`}>
           <TeacherCard {...card} />
         </div>

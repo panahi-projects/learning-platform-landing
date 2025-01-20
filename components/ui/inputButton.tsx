@@ -1,7 +1,6 @@
-import { BsFillSendFill } from "react-icons/bs";
+import { ReactNode } from "react";
 import { Button } from "./button";
 import { Input } from "./input";
-import { ReactNode } from "react";
 
 interface InputButtonProps {
   children?: ReactNode;

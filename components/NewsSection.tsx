@@ -1,4 +1,3 @@
-import { comment } from "postcss";
 import NewsCard, { NewsCardProps } from "./NewsCard";
 
 const NewsSection = () => {

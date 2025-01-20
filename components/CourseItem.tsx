@@ -24,9 +24,9 @@ const CourseItem = () => {
           Our Courses
         </h3>
         <p className="text-gray-700 text-sm lg:text-base mb-6">
-          Being brave isn't always a grand gesture; sometimes it just means
+          Being brave isn&apos;t always a grand gesture; sometimes it just means
           having a go, attempting that difficult question, offering an answer in
-          a lesson when you're simply really trying new.
+          a lesson when you&apos;re simply really trying new.
         </p>
 
         {/* Statistics */}

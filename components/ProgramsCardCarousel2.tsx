@@ -1,9 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import CardsCarousel from "./CardsCarousel";
-import { FaMusic, FaPaintbrush } from "react-icons/fa6";
-import { FaFootballBall, FaPaintBrush } from "react-icons/fa";
-import ProgramCard, { CardProps } from "./ProgramCard";
+import { CardProps } from "./ProgramCard";
 import ProgramCard2 from "./ProgramCard2";
 
 const ProgramsCardCarousel2 = () => {

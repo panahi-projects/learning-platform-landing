@@ -3,7 +3,6 @@ import Logo from "@/components/layout/Logo";
 import useOutsideClick from "@/hooks/useOutsideClick";
 import Link from "next/link";
 import { useState } from "react";
-import { GiSpellBook } from "react-icons/gi";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -21,7 +21,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
   author,
 }) => {
   return (
-    <Card className="p-0 rounded-3xl">
+    <Card data-id={id} className="p-0 rounded-3xl">
       <CardHeader className="p-0">
         <Image src={image} width={530} height={390} alt={title} />
       </CardHeader>

@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { CardProps } from "./ProgramCard";
-import { Button } from "./ui/button";
 import {
   Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
-  CardContent,
-  CardFooter,
-  CardDescription,
 } from "./ui/card";
 
 const ProgramCard2: React.FC<CardProps> = ({

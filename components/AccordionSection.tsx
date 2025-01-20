@@ -1,11 +1,10 @@
 "use client";
 import {
   Accordion,
+  AccordionContent,
   AccordionItem,
   AccordionTrigger,
-  AccordionContent,
 } from "@radix-ui/react-accordion";
-import { ChevronDownIcon } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";

@@ -1,10 +1,10 @@
-import React from "react";
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import Image from "next/image";
+import React from "react";
 import { FaFacebookF, FaLinkedin, FaYoutube } from "react-icons/fa6";
+import { Card, CardContent, CardFooter } from "./ui/card";
 
 export interface TeacherCardProps {
-  id: string;
+  id?: string;
   name: string;
   title?: string;
   imageSrc?: string;
@@ -17,7 +17,10 @@ const TeacherCard: React.FC<TeacherCardProps> = ({
   title,
 }) => {
   return (
-    <Card className="relative group rounded-3xl border-none overflow-hidden p-0">
+    <Card
+      data-id={id}
+      className="relative group rounded-3xl border-none overflow-hidden p-0"
+    >
       <CardContent className="p-0">
         <Image src={imageSrc || ""} width={395} height={610} alt={name} />
       </CardContent>
