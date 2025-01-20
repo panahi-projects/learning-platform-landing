@@ -9,7 +9,7 @@ const CourseItem = () => {
       {/* Left Side: Image */}
       <div className="w-full lg:w-1/2 flex justify-center max-h-[450px]">
         <Image
-          src="/images/course-image.jfif" // Replace with your actual image path
+          src="/images/course-image.webp" // Replace with your actual image path
           alt="Program Illustration"
           width={400} // Adjust width and height as needed
           height={400}
