@@ -6,6 +6,8 @@ This is a responsive landing page built using **Next.js**, **TypeScript**, and *
 
 ## Demo
 
+[Demo Link](https://learning-platform-landing.vercel.app/)
+
 ![Screenshot](https://github.com/panahi-projects/learning-platform-landing/blob/main/public/demo-desktop-screen.jpg)
 
 ---
